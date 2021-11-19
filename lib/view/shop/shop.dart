@@ -1,4 +1,4 @@
-import 'package:cooking_gas/component/list.dart';
+import 'package:cooking_gas/utils/list.dart';
 import 'package:cooking_gas/view/shop/shopDetail.dart';
 import 'package:flutter/material.dart';
 

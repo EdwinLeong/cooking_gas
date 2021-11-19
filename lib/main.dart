@@ -7,33 +7,10 @@
 // amber. The `_onItemTapped` function changes the selected item's index
 // and displays a corresponding message in the center of the [Scaffold].
 
+import 'package:cooking_gas/utils/text_style.dart';
 import 'package:cooking_gas/view/shop/shop.dart';
 import 'package:flutter/material.dart';
 
-Map<int, Color> customColor = <int, Color>{
-  50: const Color.fromRGBO(152, 17, 109, .1),
-  100: const Color.fromRGBO(152, 17, 109, .2),
-  200: const Color.fromRGBO(152, 17, 109, .3),
-  300: const Color.fromRGBO(152, 17, 109, .4),
-  400: const Color.fromRGBO(152, 17, 109, .5),
-  500: const Color.fromRGBO(152, 17, 109, .6),
-  600: const Color.fromRGBO(152, 17, 109, .7),
-  700: const Color.fromRGBO(152, 17, 109, .8),
-  800: const Color.fromRGBO(152, 17, 109, .9),
-  900: const Color.fromRGBO(152, 17, 109, 1),
-};
-MaterialColor colorCustom = MaterialColor(0xFF880E4F, customColor);
-
-final ThemeData lightTheme = ThemeData(
-  primarySwatch: colorCustom,
-  primaryColor: Colors.white,
-  brightness: Brightness.light,
-  backgroundColor: const Color(0xFFE5E5E5),
-  accentColor: Color.fromRGBO(152, 17, 109, 1),
-  accentIconTheme: IconThemeData(color: Colors.white),
-  dividerColor: Colors.white54,
-  fontFamily: 'Proxima Nova Alt',
-);
 void main() => runApp(MyApp(
       lightTheme: lightTheme,
     ));
@@ -50,7 +27,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: _title,
-      theme: lightTheme,
+      // theme: lightTheme,
       home: MyStatefulWidget(),
     );
   }
