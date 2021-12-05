@@ -8,6 +8,7 @@
 // and displays a corresponding message in the center of the [Scaffold].
 
 import 'package:cooking_gas/utils/text_style.dart';
+import 'package:cooking_gas/view/history/history.dart';
 import 'package:cooking_gas/view/shop/shop.dart';
 import 'package:flutter/material.dart';
 
@@ -52,10 +53,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       style: optionStyle,
     ),
     ShopPage(),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    // Text(
+    //   'Index 2: School',
+    //   style: optionStyle,
+    // ),
+    History(),
   ];
 
   void _onItemTapped(int index) {
